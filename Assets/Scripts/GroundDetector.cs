@@ -5,7 +5,15 @@ using UnityEngine;
 public class GroundDetector : MonoBehaviour
 {
     public bool grounded;
+    public string tagPlatform = "ElementoMovil";
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.tag == tagPlatform)
+        {
+            transform.SetParent(collision.transform, true);
+        }
+    }
     private void OnTriggerStay2D(Collider2D collision)
     {
         grounded = true;
@@ -13,5 +21,9 @@ public class GroundDetector : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         grounded = false;
+        if (collision.tag == tagPlatform)
+        {
+            transform.SetParent(null, true);
+        }
     }
 }
