@@ -32,4 +32,8 @@ public class Dash : MonoBehaviour
             transform.position = transform.position + new Vector3(distance * transform.localScale.x, 0);
         }
     }
+
+
+
+
 }
