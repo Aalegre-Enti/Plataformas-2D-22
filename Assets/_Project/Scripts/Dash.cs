@@ -12,6 +12,8 @@ public class Dash : MonoBehaviour
     // Start is called before the first frame update
     
     public int prueba2 = 2;
+    public int prueba1 = 0;
+    
     
     void Start()
     {
