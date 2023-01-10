@@ -9,11 +9,7 @@ public class Dash : MonoBehaviour
     public float recoverySpeed = 1;
     float dash_current;
     GroundDetector ground;
-    // Start is called before the first frame update
-    
-    public int prueba2 = 2;
-    public int prueba1 = 0;
-    
+    // Start is called before the first frame updat
     
     void Start()
     {
