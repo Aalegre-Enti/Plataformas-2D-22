@@ -9,11 +9,12 @@ public class GroundDetector : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag == tagPlatform)
+        if (collision.tag == tagPlatform)
         {
             transform.SetParent(collision.transform, true);
         }
     }
+
     private void OnTriggerStay2D(Collider2D collision)
     {
         grounded = true;

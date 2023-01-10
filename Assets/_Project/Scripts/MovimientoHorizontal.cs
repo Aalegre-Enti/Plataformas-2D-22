@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MovimientoHorizontal : MonoBehaviour
 {
-    public float velocidad_grounded;
+    public float velocidad_grounded = 10;
     public float velocidad_air;
     Animator anim;
     GroundDetector ground;

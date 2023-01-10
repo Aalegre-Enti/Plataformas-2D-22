@@ -5,6 +5,7 @@ using UnityEngine;
 public class Jump : MonoBehaviour
 {
     public float force = 10;
+    public GameObject efectoSalto;
     Rigidbody2D rb;
     GroundDetector ground;
     // Start is called before the first frame update
@@ -20,6 +21,8 @@ public class Jump : MonoBehaviour
         if(ground.grounded == true && Input.GetButtonDown("Jump"))
         {
             rb.AddForce(new Vector2(0, force));
+            GameObject temp = Instantiate(efectoSalto, transform.position, transform.rotation);
+            Destroy(temp, 1.5f);
         }
     }
 }
