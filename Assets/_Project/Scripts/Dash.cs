@@ -11,7 +11,7 @@ public class Dash : MonoBehaviour
     GroundDetector ground;
     // Start is called before the first frame update
     
-    
+    public int prueba2 = 2;
     
     void Start()
     {
